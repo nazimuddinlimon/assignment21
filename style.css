@@ -1,0 +1,263 @@
+/* Basic css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.clear::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+/* Header css */
+.header-section{
+    background:#22c3a3;
+    padding: 0 25px;
+}
+.header-logo{
+    width: 20%;
+}
+.header-logo h2 {
+    color: white;
+    padding: 18px 0;
+}
+.header-logo a{
+    color: white;
+}
+.header-menu{
+    width: 80%;
+}
+.header-menu ul{
+    text-align:right;
+    list-style-type: none;
+}
+.header-menu ul li {
+    display: inline-block;
+    margin-right: 6px;
+}
+.header-menu ul li:last-child{
+    margin-right: 0;
+}
+.header-menu ul li a {
+    display: block;
+    padding: 0 10px;
+    line-height: 60px;
+    color: white;
+    overflow: hidden;
+    /* font-weight: bold; */
+    font-size: 17px;
+    text-transform: uppercase;
+    position: relative;
+    transition: .4s;
+}
+.header-menu ul li a:hover{
+    text-shadow: 0 0 10px;
+}
+.header-menu ul li a::after{
+    content: '';
+    position: absolute;
+    left: -100%;
+    bottom: 10px;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, #039275, white);
+    border-radius: 5px;
+}
+.header-menu ul li a:hover::after{
+    left: 100%;
+    transition: 1s;
+}
+/* Banner section */
+.banner-section{
+    text-align:center;
+    padding: 190px 0;
+    background: url(./cover\ img.png) no-repeat right top fixed,#0cb097 ;
+}
+.banner-section h1{
+    color: white;
+    font-size: 54px;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+}
+.banner-section h3{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 31px;
+}
+.banner-section a {
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 16px;
+    display: inline-block;
+    transition: .4s;
+}
+.banner-section a:hover{
+    border: 2px solid black;
+    color: black;
+}
+/* Service section */
+.service-section{
+    padding: 80px;
+    border-bottom: 2px solid #0dbf9b;
+}
+.title{
+    text-align:center;
+}
+.title h1{
+    color: #555555;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.title h1:hover{
+    text-decoration: underline;
+}
+.title p{
+    color: #555555;
+}
+.services {
+    padding: 50px 0 0 0;
+}
+.service-box {
+    width: 23%;
+    margin-right: 2.6666%;
+    text-align-last: center;
+    border: 1px solid transparent;
+    padding: 23px 12px;
+}
+.service-box:last-child{
+    margin-right: 0;
+}
+.service-box:hover{
+    border: 1px solid #0cb097;
+    box-shadow: 1px 1px 4px black,
+                1px 1px 8px #0cb097;
+    cursor: pointer;
+}
+.service-box span {
+    color: #0dbf9b;
+    font-size: 40px;
+    margin-bottom: 22px;
+    display: inline-block;
+}
+.service-box span i{
+    transition: .5s;
+}
+.service-box:hover i{
+    transform: scale(1.3);
+}
+.service-box h3 {
+    color: #666666;
+    padding: 18px 0;
+}
+.service-box p {
+    color: #666666;
+    line-height: 1.2rem;
+}
+/* About section */
+.about-section{
+    padding: 80px 50px;
+}
+.about{
+    padding: 50px 0 0 0;
+}
+.about-img{
+    width: 43%;
+}
+.about-img img{
+    width: 100%;
+}
+.about-details{
+    width: 57%;
+    padding: 0px 0 0 50px;
+}
+.about-details h2 {
+    color: #555555;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.about-details h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.about-details p {
+    color: #555555;
+    margin-bottom: 20px;
+}
+/* Contect section */
+.contect-section{
+    padding: 60px 150px;
+}
+.contect{
+    padding: 30px 50px;
+}
+.contect-box {
+    text-align: center;
+    width: 31%;
+    padding-top: 30px;
+    margin-right: 2.33%;
+    height: 130px;
+    border-bottom: 2px solid transparent;
+}
+.contect-box:hover{
+    border-bottom: 2px solid #0dbf9b;
+}
+.contect-box span {
+    color: #0dbf9b;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.contect-box p {
+    color: #555555;
+    line-height: 1.4rem;
+}
+/* Social menu */
+.social-menu{
+    background:#0dbf9b;
+    text-align:center;
+    padding: 10px 0;
+}
+.social-menu a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21px;
+    margin-right: 15px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.social-menu a:hover{
+    background: white;
+    color: #0dbf9b;
+}
+/* Footer section */
+.footer{
+    background: black;
+    padding: 9px 0;
+    text-align: center;
+}
+.footer p{
+    color: #555555;
+    font-size: 14px;
+}
